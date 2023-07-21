@@ -41,12 +41,12 @@ body {
 }
 
 .text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    width: 356px;
+    
 }
 @media only screen and (min-width: 1158px) {
 .text {
@@ -495,7 +495,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 .three-list {
     display: flex;
     gap: 24px;
-    width: 264px;
     padding-left: 12px;
     flex-wrap: wrap;
     justify-content: center;
@@ -564,7 +563,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 
 .member {
-    padding: 32px 0;
+    padding: 32px 0; 
     
 
 

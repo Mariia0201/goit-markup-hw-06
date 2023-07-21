@@ -127,13 +127,17 @@
                 <h2 class="title">What are we doing</h2>
                 <ul class="two-list list">
                     <li class="two-item">
-                        <img src="./images/section2(1).jpg" alt="Computer" width="360" height="300">
+                        <img src="./images/section2/img-1@1x.png"
+                        srcset="./images/section2/img-1@1x.png 1x, ./images/section2/img-1@2x.png 2x"
+                        alt="Computer" width="360" height="300">
                     </li>
                     <li class="two-item">
-                        <img src="./images/section2(2).jpg" alt="Mobile phone" width="360" height="300">
+                        <img src="./images/section2/img-2@1x.png"
+                        srcset="./images/section2/img-2@1x.png 1x, ./images/section2/img-2@2x.png 2x"alt="Mobile phone" width="360" height="300">
                     </li>
                     <li class="two-item">
-                        <img src="./images/section2(3).jpg" alt="Laptop and mobile phone" width="360" height="300">
+                        <img src="./images/section2/img-3@1x.png"
+                        srcset="./images/section2/img-3@1x.png 1x, ./images/section2/img-3@2x.png 2x" alt="Laptop and mobile phone" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -144,7 +148,9 @@
                 <h2 class="title">Our Team</h2>
                 <ul class="three-list list">
                     <li class="three-item">
-                        <img class="img-three" src="./images/section3(1).jpg" alt="Product Designer - Mark Guerrero"
+                        <img class="img-three" src="./images/section3/img@1x.png"
+                        srcset="./images/section3/img@1x.png 1x, ./images/section3/img@2x.png 2x"
+                        alt="Product Designer - Mark Guerrero"
                             width="264" height="260">
                         <div class="member">
                             <h3 class="subtitle-three">Mark Guerrero</h3>
@@ -183,7 +189,9 @@
                         </div>
                     </li>
                     <li class="three-item">
-                        <img class="img-three" src="./images/section3(2).jpg" alt="Frontend Developer - Tom Ford"
+                        <img class="img-three" src="./images/section3/img@1x-1.png"
+                        srcset="./images/section3/img@1x-1.png 1x, ./images/section3/img@2x-1.png 2x"
+                        alt="Frontend Developer - Tom Ford"
                             width="264" height="260">
                         <div class="member">
                             <h3 class="subtitle-three">Tom Ford</h3>
@@ -224,7 +232,9 @@
                         </div>
                     </li>
                     <li class="three-item">
-                        <img class="img-three" src="./images/section3(3).jpg" alt="Marketing - Camila Garcia"
+                        <img class="img-three" src="./images/section3/img@1x-2.png"
+                        srcset="./images/section3/img@1x-2.png 1x, ./images/section3/img@2x-2.png"
+                        alt="Marketing - Camila Garcia"
                             width="264" height="260">
                         <div class="member">
                             <h3 class="subtitle-three">Camila Garcia</h3>
@@ -265,7 +275,9 @@
                         </div>
                     </li>
                     <li class="three-item">
-                        <img class="img-three" src="./images/section3(4).jpg" alt="UI Designer - Daniel Wilson"
+                        <img class="img-three" src="./images/section3/img@1x-3.png"
+                        srcset="./images/section3/img@1x-3.png 1x, ./images/section3/img@2x-3.png 2x"
+                        alt="UI Designer - Daniel Wilson"
                             width="264" height="260">
                         <div class="member">
                             <h3 class="subtitle-three">Daniel Wilson</h3>
@@ -502,62 +514,64 @@
             </div>
         
 <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-            <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
+    <button class=" hamburger-icon-btn menu-toggle js-close-menu">
+        <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-menu"></use>
         </svg>
     </button>
 
-    <ul class="mobile-menu">
-        <li><a class="menu-item" href="./index.html" class="link">Studio</a></li>
-        <li><a class="menu-item" href="./portfolio.html" class="link">Portfolio</a></li>
-        <li><a class="menu-item" href="" class="link">Contacts</a></li>
-        
-    </ul>
-    <address class="address-menu">
-        <ul class="address-list list">
-            <li class="address-item">
-                <a class="menu-phone-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-            <li class="address-item ">
-                <a class="menu-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
+    <div class="mobile-menu-content">
+        <ul class="mobile-menu">
+            <li><a class="menu-item" href="./index.html" class="link">Studio</a></li>
+            <li><a class="menu-item" href="./portfolio.html" class="link">Portfolio</a></li>
+            <li><a class="menu-item" href="" class="link">Contacts</a></li>
         
         </ul>
-    </address>
-    <ul class="footer-networks-list">
-        <li class="footer-networks-item">
-    
-            <a href="" class="footer-networks-link">
-                <svg class="footer-networks-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="footer-networks-item">
-            <a href="" class="footer-networks-link">
-                <svg class="footer-networks-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="footer-networks-item">
-            <a href="" class="footer-networks-link">
-                <svg class="footer-networks-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="footer-networks-item">
-            <a href="" class="footer-networks-link">
-                <svg class="footer-networks-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
+        <div class="menu-bottom">
+            <address class="address-menu">
+                <ul class="address-list-menu list">
+                    <li class="address-item">
+                        <a class="menu-phone-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="address-item ">
+                        <a class="menu-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+            
+                </ul>
+            </address>
+            <ul class="footer-networks-list-menu">
+                <li class="footer-networks-item">
+            
+                    <a href="" class="footer-networks-link">
+                        <svg class="footer-networks-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-networks-item">
+                    <a href="" class="footer-networks-link">
+                        <svg class="footer-networks-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-networks-item">
+                    <a href="" class="footer-networks-link">
+                        <svg class="footer-networks-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-networks-item">
+                    <a href="" class="footer-networks-link">
+                        <svg class="footer-networks-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

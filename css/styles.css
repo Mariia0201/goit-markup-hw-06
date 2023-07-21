@@ -265,13 +265,8 @@ button {
 .header-link:focus {
     color: #404bbf;
 }
-/* .menu-toggle {
-    background-color: transparent;
-        border: none;
-        padding: 0;
-        line-height: 0;
-        stroke: #2E2F42;
-} */
+
+
 @media screen and (min-width: 768px) {
     .header-button {
         display: none;
@@ -1284,8 +1279,8 @@ background-color: #404BBF;
 
 
                         .menu-toggle {
-                            min-height: 24px;
-                            min-width: 24px;
+                            min-height: 32px;
+                            min-width: 22px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -1293,10 +1288,9 @@ background-color: #404BBF;
                             margin: 0;
                             padding: 0;
                             cursor: pointer;
-                            border: 1px solid  #2E2F42;
                             border-radius: 24px;
                             outline: none;
-                            background-color: E7E9FC;
+                            background-color: transparent;
                         }
             
                         @media (min-width: 768px) {
@@ -1304,6 +1298,13 @@ background-color: #404BBF;
                                 display: none;
                             }
                         }
+                             .menu-toggle {
+                                 background-color: transparent;
+                                 border: none;
+                                padding: 0;
+                                 line-height: 0;
+                                stroke: #2E2F42;
+                             }
             
                         .menu-toggle:hover,
                         .menu-toggle:focus {
@@ -1414,10 +1415,19 @@ color: #404BBF;
     gap: 56px;
     display: flex;
  }
- .hamburger-icon-btn {
-  
-
- }
+   .menu-container .hamburger-icon-btn {
+       position: absolute;
+       top: 24px;
+       right: 24px;
+   }
+   .hamburger-icon-btn {
+    min-height: 24px;
+    min-width: 24px;
+    border-radius: 24px;
+        border: 1px solid  #2E2F42;
+        opacity: 0.10000000149011612;
+        background:  #E7E9FC;
+   }
  .hamburger-icon {
     stroke: #2E2F42;
  }

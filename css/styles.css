@@ -171,9 +171,13 @@ button {
     text-transform: uppercase;
     color: var(--btn);
     font-family: "Raleway", sans-serif;
-    margin-right: 76px;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+    .header-logo {
+    margin-right: 76px;
+    }
 }
 
 .footer-logo {
@@ -184,9 +188,9 @@ button {
     text-transform: uppercase;
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
-    display: flex;
+    
     margin-bottom: 16px;
-    justify-content: center;
+    
 }
 @media screen and (min-width: 768px) 
 { .footer-logo {
@@ -333,7 +337,7 @@ button {
     max-width: 1440px;
     margin: 0 auto;   
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
@@ -371,7 +375,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         text-align: center;
         letter-spacing: 0.02em;
         max-width: 320px;
-        margin-bottom: 72px;
         margin-left: auto;
         margin-right: auto;
 
@@ -484,13 +487,17 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 .three {
     background-color: #F4F4FD;
+    padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+.three {
     padding: 120px 0;
+}
 }
 
 .three-list {
     display: flex;
-    gap: 24px;
-    padding-left: 12px;
+    gap: 72px;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -524,7 +531,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 32px;
+        
         flex-wrap: wrap;
         background-color: #FFFFFF;
 }
@@ -619,12 +626,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     
     
 }
-@media screen and (max-width: 768px) {
-    .footer-text {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-}
 
 .btn-list {
     display: flex;
@@ -649,7 +650,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -684,6 +686,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 @media screen and (max-width: 768px) {
 .clients-list {
     display: flex;
+    justify-content: center;
     row-gap: 72px;
     column-gap: 16px;
     flex-wrap: wrap;
@@ -708,7 +711,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 }
 .clients-item {
-width: 190px;
 height: 88px;
 }
 @media screen and (min-width: 768px) {
@@ -760,9 +762,13 @@ height: 88px;
     fill: #404BBF;
 }
 .four {
+    padding: 96px 0;
+}
+@media screen and (min-width: 1158px) {
+.four {
     padding: 120px 0;
 }
-
+}
 
 .advantages {
     display: none;
@@ -816,7 +822,6 @@ fill: var(--logo-light)
 
 .footer-items{
     display: flex;
-    align-items: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .footer-items {
@@ -1192,7 +1197,7 @@ fill: var(--logo-light);
             }
         }
     .subscribe-form-input {
-        width: 389px;
+            max-width: 320px;
             height: 40px;
             border: 1px solid #ffffff;
             background-color: transparent;
@@ -1317,7 +1322,7 @@ background-color: #404BBF;
                             left: 0;
                             width: 100%;
                             height: 100%;
-                            padding: 32px;
+                            padding: 80px 35px 40px 40px;
                             background-color: #fff;
                             z-index: 999;
             
@@ -1347,7 +1352,7 @@ background-color: #404BBF;
                             color: #fff;
                             text-decoration: none;
                         }
-    .menu-item {
+        .menu-item {
     color:  #2E2F42;
     
     font-size: 36px;
@@ -1356,10 +1361,10 @@ background-color: #404BBF;
     letter-spacing: 0.72px;
     text-transform: capitalize;
      }
-     .menu-item:focus,
-     .menu-item:hover {
-color: #404BBF;
-         }
+     
+.menu-item.active {
+    color: #404BBF;
+}
 
  @media screen and (max-width: 768px) {
     .mobile-menu {
@@ -1377,11 +1382,12 @@ color: #404BBF;
  .menu-phone-link {
     
         
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 40px;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+        color: #4D5AE5;
  }
  .menu-address-link {
         color:  #434455;
@@ -1404,7 +1410,6 @@ color: #404BBF;
  }
 
  .mobile-menu-content {
-    padding: 80px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1412,7 +1417,7 @@ color: #404BBF;
  }
  .footer-networks-list-menu {
     margin-top: 48px;
-    gap: 56px;
+    gap: 30px;
     display: flex;
  }
    .menu-container .hamburger-icon-btn {
@@ -1427,6 +1432,10 @@ color: #404BBF;
         border: 1px solid  #2E2F42;
         opacity: 0.10000000149011612;
         background:  #E7E9FC;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
    }
  .hamburger-icon {
     stroke: #2E2F42;

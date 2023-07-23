@@ -187,25 +187,19 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    font-family: Raleway, sans-serif;
-    
+    font-family: Raleway, sans-serif; 
     margin-bottom: 17.5px;
     
 }
 @media screen and (min-width: 768px) 
 { .footer-logo {
     display: inline-block;
-    margin-bottom: 16px;
     width: 264px;
     text-align: left;
 }
 }
 
-@media screen and (min-width: 768px) 
-{.footer-logo {
-    display: inline-block;
-}
-}
+
 
 .web {
     color: #4D5AE5;
@@ -336,6 +330,11 @@ button {
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;   
+}
+@media screen and (min-width: 1158px) {
+    .hero {
+        padding: 188px 0;
+    }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -506,7 +505,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
             display: flex;
                 gap: 64px 24px;
                 flex-wrap: wrap;
-                width: 768px;
+            
                 justify-content: center;
                 padding-left: 0;
     }
@@ -559,7 +558,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
             justify-content: center;
             align-items: center;
             flex-wrap: nowrap;
-            gap: 32px;
+            
         }
     }
 
@@ -621,11 +620,14 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     width: 264px;
-    height: 72px;
-    text-align: left;
-  
+    text-align: left; 
+    margin-top: 17.5px;
     
-    
+}
+@media screen and (min-width: 768px) {
+    .footer-text {
+    margin-top: 0;
+    }
 }
 
 .btn-list {
@@ -1207,6 +1209,8 @@ fill: var(--logo-light);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
             color: #ffffff;
+            padding: 8px 0 8px 16px;
+            opacity: 0.6000000238418579;
     }
         @media screen and (min-width: 768px) {
         .subscribe-form-input {
